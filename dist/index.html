@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Work+Sans:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>vtop3-test</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="">
+        <aside class="">
+          <p>Sign up</p>
+        </aside>
+        <section id="my-svg">
+          <header>
+            <h1>New user?</h1>
+            <p class="title">Use the form below to create your account.</p>
+          </header>
+          <form name="formBlock" method="post" novalidate>
+            <div class="form">
+              <div class="input-block">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first_name"
+                  value="Alice"
+                />
+                <span class="" aria-live="polite"></span>
+              </div>
+
+              <div class="input-block">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last_name"
+                  value="Miller"
+                />
+                <span class="" aria-live="polite"></span>
+              </div>
+
+              <div class="input-block">
+                <label for="nationality">Nationality</label>
+                <select name="nationality" id="nationality">
+                  <option>American</option>
+                  <option>Russian</option>
+                  <option>Martian</option>
+                </select>
+              </div>
+
+              <div class="input-block">
+                <label for="email">E-mail</label>
+                <input
+                  class="email"
+                  type="email"
+                  id="email"
+                  name="email"
+                  value="alice.miller@yahoo.com"
+                />
+                <span class="" aria-live="polite"></span>
+              </div>
+
+              <div class="birthday">
+                <p class="birthday__title">Date of Birth</p>
+                <div class="birthday__select">
+                  <select name="day" id="day"></select>
+                  <select name="month" id="month"></select>
+                  <select name="year" id="year"></select>
+                </div>
+              </div>
+
+              <div class="gender">
+                <p class="gender__title">Gender</p>
+                <div class="gender__block">
+                  <label
+                    >Male
+                    <input type="radio" name="gender" />
+                    <span></span>
+                  </label>
+                  <label
+                    >Female
+                    <input type="radio" name="gender" checked />
+                    <span></span>
+                  </label>
+                </div>
+              </div>
+              <div class="input-block">
+                <label for="psw">Password</label>
+                <input type="password" id="psw" name="psw" />
+                <span class="" aria-live="polite"></span>
+              </div>
+              <div class="input-block">
+                <label for="psw-repeat">Confirm Password</label>
+                <input type="password" id="psw-repeat" name="psw_repeat" />
+                <span class="" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="login-signup">
+              <div class="login">Have an account? <a href="#">Login</a></div>
+              <div class="signup">
+                <button type="submit" class="signup-btn" name="signup">
+                  Complete Signup
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
